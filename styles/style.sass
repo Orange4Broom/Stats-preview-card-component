@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap')
+    
+*
+    box-sizing: border-box
+
+body
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+    min-height: 100vh
+    width: 100%
+
+    margin: 0
+    padding: 0
+
+    background-color: hsl(233, 47%, 7%)
+
+    #text-card
+        height: 500px
+        width: 600px
+        min-width: 200px
+
+        border-radius: 10px 0 0 10px
+
+        padding: 70px
+
+        background-color: hsl(244, 38%, 16%)
+
+        #header
+            max-width: 400px
+
+            margin: 0
+
+            font-family: 'Inter', sans-serif
+            font-size: 38px
+
+            color: hsl(0, 0%, 100%)
+
+        #content
+            max-width: 360px
+
+            margin-top: 30px
+
+            line-height: 25px
+
+            font-size: 15px
+            color: hsla(0, 0%, 100%, 0.6)
+            font-family: 'Lexend Deca', sans-serif
+
+        #stats
+            display: flex
+            flex-direction: row
+            justify-content: start
+            align-items: center
+
+            gap: 70px
+
+            height: 100px
+            width: 100%
+            max-width: 400px
+
+            margin-top: 70px
+
+            .top-header
+                margin: 0
+
+                color: hsl(0, 0%, 100%)
+                font-family: 'Inter', sans-serif
+                font-weight: 700
+
+            .bottom-text
+                margin: 10px 0 0 0
+
+                color: hsla(0, 0%, 100%, 0.6)
+                font-size: 12px
+                font-family: 'Lexend Deca', sans-serif
+                font-weight: 400
+
+                letter-spacing: 0.5px
+
+
+
+
+    #img-card
+        height: 500px
+        width: 600px
+        min-width: 200px
+
+        border-radius: 0 10px 10px 0
+
+        background-image: url(/images/image-header-desktop.jpg)
+        background-size: cover
+
+        #cover-img
+            height: 100%
+            width: 100%
+
+            border-radius: 0 10px 10px 0
+
+            opacity: 0.6
+            background-color: hsl(277, 64%, 61%)

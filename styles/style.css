@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 50px 0 50px;
   background-color: hsl(233deg, 47%, 7%);
 }
 body #text-card {
@@ -76,4 +76,42 @@ body #img-card #cover-img {
   border-radius: 0 10px 10px 0;
   opacity: 0.6;
   background-color: hsl(277deg, 64%, 61%);
+}
+
+@media (max-width: 1200px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  body #img-card {
+    height: 200px;
+    width: 300px;
+    min-width: 200px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(/images/image-header-mobile.jpg);
+  }
+  body #img-card #cover-img {
+    border-radius: 10px 10px 0 0;
+  }
+  body #text-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 300px;
+    min-width: 200px;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+  }
+  body #text-card #header {
+    font-size: 25px;
+  }
+  body #text-card #content {
+    font-size: 14px;
+  }
+  body #text-card #stats {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
